@@ -1,6 +1,7 @@
 class Viking
+    attr_accessor :name, :age, :health, :strength
     def initialize(name, age, health, strength)
-        # set up your new viking however you want
+            # set up your new viking however you want
         @name = name
         @age = age
         @health = health
@@ -9,13 +10,7 @@ class Viking
     def attack(enemy)
          code to fight
     end 
-    def health
-        @health
-    end
-    def health=(new_health)
-    @health = new_health
-    end
-   
+       
     def take_damage(damage)
       self.health -= damage
       
