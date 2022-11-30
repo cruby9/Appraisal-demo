@@ -14,7 +14,7 @@ end
 class Movie 
     attr_accessor :title, :showtime, :cinema 
 
-    @@all = []
+      @@all = []
 
     def initialize(title, showtime)
         @title = title

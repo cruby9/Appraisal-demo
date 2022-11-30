@@ -18,7 +18,7 @@ class Viking
       self.shout("OUCH!")
     end 
     
-   def shout(str)
+     def shout(str)
      puts str
    end
 end
