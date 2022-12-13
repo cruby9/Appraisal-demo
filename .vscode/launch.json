@@ -1,14 +1,21 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Debug current file",
-            "type": "ruby-byebug",
-            "request": "launch",
-            "program": "${file}"
-        }
-    ]
+	"version": "0.2.0",
+	"debugServer":4711,
+	"configurations": [
+		{
+			"name": "Debug Local File",
+			"type": "Ruby",
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"program": "{workspaceRoot}/../tic_tac_toc.rb",
+			"showDebuggerOutput": true
+		}/*,
+		{
+			"name": "Debug Local",
+			"type": "Ruby",
+			"request": "launch",
+			"program": "/g/My Drive/Github/tic_tac_toc.rb",
+			"showDebuggerOutput": true
+		}*/
+	]
 }

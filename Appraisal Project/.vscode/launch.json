@@ -1,19 +1,21 @@
 {
 	"version": "0.2.0",
+	"debugServer":4711,
 	"configurations": [
 		{
-			"name": "Listen for rdebug-ide",
+			"name": "Debug Local File",
 			"type": "Ruby",
-			"request": "attach",
-			"remoteHost": "127.0.0.1",
-			"remotePort": "1234",
-			"remoteWorkspaceRoot": "${workspaceRoot}"
-		},
-        {
-            "name": "Debug Local File",
-            "type": "Ruby",
-            "request": "launch",
-            "program": "${workspaceRoot}/main.rb"
-        }
+			"request": "launch",
+			"cwd": "${workspaceRoot}",
+			"program": "{workspaceRoot}/../main.rb",
+			"showDebuggerOutput": true
+		}/*,
+		{
+			"name": "Debug Local",
+			"type": "Ruby",
+			"request": "launch",
+			"program": "/g/My Drive/Github/main.rb",
+			"showDebuggerOutput": true
+		}*/
 	]
 }
