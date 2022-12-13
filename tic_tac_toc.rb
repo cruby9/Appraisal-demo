@@ -1,3 +1,6 @@
+require 'debug'
+
+
 class Choice
   attr_reader :position, :marker, :name, :tictac
   
@@ -8,7 +11,7 @@ class Choice
     #@available_positions = [1, 2, 3, 4, 5, 6, 7, 8, 9]
     
   end
-
+  binding.break
   def choose_number
       
       loop do
